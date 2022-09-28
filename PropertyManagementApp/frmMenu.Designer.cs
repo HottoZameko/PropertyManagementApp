@@ -64,14 +64,16 @@ namespace PropertyManagementApp
             // 
             // btnPropertyType
             // 
-            this.btnPropertyType.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnPropertyType.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPropertyType.BackColor = System.Drawing.Color.Red;
+            this.btnPropertyType.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPropertyType.FlatAppearance.BorderSize = 0;
             this.btnPropertyType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPropertyType.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPropertyType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPropertyType.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPropertyType.Location = new System.Drawing.Point(-2, 45);
             this.btnPropertyType.Name = "btnPropertyType";
-            this.btnPropertyType.Size = new System.Drawing.Size(150, 50);
+            this.btnPropertyType.Size = new System.Drawing.Size(168, 50);
             this.btnPropertyType.TabIndex = 1;
             this.btnPropertyType.Text = "Property Type";
             this.btnPropertyType.UseVisualStyleBackColor = false;
@@ -79,14 +81,15 @@ namespace PropertyManagementApp
             // 
             // btnProperties
             // 
-            this.btnProperties.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnProperties.BackColor = System.Drawing.Color.Red;
             this.btnProperties.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProperties.FlatAppearance.BorderSize = 0;
             this.btnProperties.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProperties.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProperties.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnProperties.Location = new System.Drawing.Point(-2, 92);
             this.btnProperties.Name = "btnProperties";
-            this.btnProperties.Size = new System.Drawing.Size(150, 50);
+            this.btnProperties.Size = new System.Drawing.Size(168, 50);
             this.btnProperties.TabIndex = 2;
             this.btnProperties.Text = "Properties";
             this.btnProperties.UseVisualStyleBackColor = false;
@@ -94,14 +97,15 @@ namespace PropertyManagementApp
             // 
             // btnProvince
             // 
-            this.btnProvince.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnProvince.BackColor = System.Drawing.Color.Red;
             this.btnProvince.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProvince.FlatAppearance.BorderSize = 0;
             this.btnProvince.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProvince.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProvince.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnProvince.Location = new System.Drawing.Point(-2, 137);
             this.btnProvince.Name = "btnProvince";
-            this.btnProvince.Size = new System.Drawing.Size(150, 50);
+            this.btnProvince.Size = new System.Drawing.Size(168, 50);
             this.btnProvince.TabIndex = 3;
             this.btnProvince.Text = "Province";
             this.btnProvince.UseVisualStyleBackColor = false;
@@ -109,14 +113,15 @@ namespace PropertyManagementApp
             // 
             // btnCities
             // 
-            this.btnCities.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCities.BackColor = System.Drawing.Color.Red;
             this.btnCities.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCities.FlatAppearance.BorderSize = 0;
             this.btnCities.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCities.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCities.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCities.Location = new System.Drawing.Point(-2, 183);
             this.btnCities.Name = "btnCities";
-            this.btnCities.Size = new System.Drawing.Size(150, 50);
+            this.btnCities.Size = new System.Drawing.Size(168, 50);
             this.btnCities.TabIndex = 4;
             this.btnCities.Text = "Cities";
             this.btnCities.UseVisualStyleBackColor = false;
@@ -124,15 +129,16 @@ namespace PropertyManagementApp
             // 
             // btnSurbub
             // 
-            this.btnSurbub.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSurbub.BackColor = System.Drawing.Color.Red;
             this.btnSurbub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSurbub.FlatAppearance.BorderSize = 0;
             this.btnSurbub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSurbub.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSurbub.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSurbub.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSurbub.Location = new System.Drawing.Point(-2, 230);
             this.btnSurbub.Name = "btnSurbub";
-            this.btnSurbub.Size = new System.Drawing.Size(150, 41);
+            this.btnSurbub.Size = new System.Drawing.Size(168, 41);
             this.btnSurbub.TabIndex = 5;
             this.btnSurbub.Text = "Surbub";
             this.btnSurbub.UseVisualStyleBackColor = false;
@@ -140,14 +146,15 @@ namespace PropertyManagementApp
             // 
             // btnAgencies
             // 
-            this.btnAgencies.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAgencies.BackColor = System.Drawing.Color.Red;
             this.btnAgencies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgencies.FlatAppearance.BorderSize = 0;
             this.btnAgencies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgencies.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgencies.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAgencies.Location = new System.Drawing.Point(-2, 268);
             this.btnAgencies.Name = "btnAgencies";
-            this.btnAgencies.Size = new System.Drawing.Size(150, 41);
+            this.btnAgencies.Size = new System.Drawing.Size(168, 41);
             this.btnAgencies.TabIndex = 6;
             this.btnAgencies.Text = "Agencies";
             this.btnAgencies.UseVisualStyleBackColor = false;
@@ -155,14 +162,15 @@ namespace PropertyManagementApp
             // 
             // btnAgent
             // 
-            this.btnAgent.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAgent.BackColor = System.Drawing.Color.Red;
             this.btnAgent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgent.FlatAppearance.BorderSize = 0;
             this.btnAgent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgent.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAgent.Location = new System.Drawing.Point(-2, 306);
             this.btnAgent.Name = "btnAgent";
-            this.btnAgent.Size = new System.Drawing.Size(150, 41);
+            this.btnAgent.Size = new System.Drawing.Size(168, 41);
             this.btnAgent.TabIndex = 7;
             this.btnAgent.Text = "Agent";
             this.btnAgent.UseVisualStyleBackColor = false;
@@ -170,14 +178,15 @@ namespace PropertyManagementApp
             // 
             // btnTenant
             // 
-            this.btnTenant.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTenant.BackColor = System.Drawing.Color.Red;
             this.btnTenant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTenant.FlatAppearance.BorderSize = 0;
             this.btnTenant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTenant.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTenant.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTenant.Location = new System.Drawing.Point(-2, 344);
             this.btnTenant.Name = "btnTenant";
-            this.btnTenant.Size = new System.Drawing.Size(150, 41);
+            this.btnTenant.Size = new System.Drawing.Size(168, 41);
             this.btnTenant.TabIndex = 8;
             this.btnTenant.Text = "Tenant";
             this.btnTenant.UseVisualStyleBackColor = false;
@@ -185,14 +194,15 @@ namespace PropertyManagementApp
             // 
             // btnPropertyAgent
             // 
-            this.btnPropertyAgent.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPropertyAgent.BackColor = System.Drawing.Color.Red;
             this.btnPropertyAgent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPropertyAgent.FlatAppearance.BorderSize = 0;
             this.btnPropertyAgent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPropertyAgent.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPropertyAgent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPropertyAgent.Location = new System.Drawing.Point(-2, 381);
             this.btnPropertyAgent.Name = "btnPropertyAgent";
-            this.btnPropertyAgent.Size = new System.Drawing.Size(150, 41);
+            this.btnPropertyAgent.Size = new System.Drawing.Size(168, 41);
             this.btnPropertyAgent.TabIndex = 9;
             this.btnPropertyAgent.Text = "Property Agent";
             this.btnPropertyAgent.UseVisualStyleBackColor = false;
@@ -200,14 +210,15 @@ namespace PropertyManagementApp
             // 
             // btnReports
             // 
-            this.btnReports.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReports.BackColor = System.Drawing.Color.Red;
             this.btnReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReports.FlatAppearance.BorderSize = 0;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnReports.Location = new System.Drawing.Point(-2, 454);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(150, 50);
+            this.btnReports.Size = new System.Drawing.Size(168, 50);
             this.btnReports.TabIndex = 10;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
@@ -216,14 +227,15 @@ namespace PropertyManagementApp
             // 
             // btnRental
             // 
-            this.btnRental.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRental.BackColor = System.Drawing.Color.Red;
             this.btnRental.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRental.FlatAppearance.BorderSize = 0;
             this.btnRental.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRental.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRental.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRental.Location = new System.Drawing.Point(-2, 419);
             this.btnRental.Name = "btnRental";
-            this.btnRental.Size = new System.Drawing.Size(150, 41);
+            this.btnRental.Size = new System.Drawing.Size(168, 41);
             this.btnRental.TabIndex = 11;
             this.btnRental.Text = "Rental";
             this.btnRental.UseVisualStyleBackColor = false;
@@ -232,10 +244,10 @@ namespace PropertyManagementApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(260, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(328, 35);
@@ -258,21 +270,22 @@ namespace PropertyManagementApp
             this.panel1.Controls.Add(this.btnPropertyAgent);
             this.panel1.Controls.Add(this.btnReports);
             this.panel1.Controls.Add(this.btnRental);
-            this.panel1.Location = new System.Drawing.Point(12, 4);
+            this.panel1.Location = new System.Drawing.Point(-2, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(153, 504);
+            this.panel1.Size = new System.Drawing.Size(167, 504);
             this.panel1.TabIndex = 23;
             // 
             // btnAdministrator
             // 
-            this.btnAdministrator.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAdministrator.BackColor = System.Drawing.Color.Red;
             this.btnAdministrator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAdministrator.FlatAppearance.BorderSize = 0;
             this.btnAdministrator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrator.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrator.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAdministrator.Location = new System.Drawing.Point(-2, -2);
             this.btnAdministrator.Name = "btnAdministrator";
-            this.btnAdministrator.Size = new System.Drawing.Size(150, 50);
+            this.btnAdministrator.Size = new System.Drawing.Size(168, 50);
             this.btnAdministrator.TabIndex = 12;
             this.btnAdministrator.Text = "Administrator";
             this.btnAdministrator.UseVisualStyleBackColor = false;
@@ -280,7 +293,7 @@ namespace PropertyManagementApp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblNewTex);
             this.panel2.Location = new System.Drawing.Point(167, 4);
@@ -300,7 +313,7 @@ namespace PropertyManagementApp
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.BackColor = System.Drawing.Color.Red;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(167, 429);
