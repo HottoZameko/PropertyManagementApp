@@ -118,6 +118,7 @@ namespace PropertyManagementApp
         {
             ucAdministrator1.BringToFront();
             lblNewTex.Text = "Adminnistrator";
+            
         }
 
         private void btnReports_MouseClick(object sender, MouseEventArgs e)

@@ -108,6 +108,12 @@
     <Compile Include="ucRental.Designer.cs">
       <DependentUpon>ucRental.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucReports.Designer.cs">
+      <DependentUpon>ucReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucSurbub.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucRental.resx">
       <DependentUpon>ucRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucReports.resx">
+      <DependentUpon>ucReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucSurbub.resx">
       <DependentUpon>ucSurbub.cs</DependentUpon>
