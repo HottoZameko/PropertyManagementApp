@@ -80,5 +80,14 @@ namespace PropertyManagementApp
             cmbStatus.Items.Add("Active");
             cmbStatus.Items.Add("In-activae");
         }
+
+        private void btnDisplay_Click(object sender, EventArgs e)
+        {
+            LoadAdmin();
+        }
+        public void LoadAdmin()
+        {
+            dgvAdmin.DataSource = bll.GetAdmin();
+        }
     }
 }

@@ -16,6 +16,10 @@ namespace BLL
         {
             return dal.InsertAdmin(admin);
         }
+        public DataTable GetAdmin()
+        {
+            return dal.GetAdmin();
+        }
         public int InsertPropertyType(PropertyType type)
         {
             return dal.InsertPropertyType(type);

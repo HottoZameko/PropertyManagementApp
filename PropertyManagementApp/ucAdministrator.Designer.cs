@@ -31,6 +31,7 @@ namespace PropertyManagementApp
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnDisplay = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@ namespace PropertyManagementApp
             this.errSurname = new System.Windows.Forms.ErrorProvider(this.components);
             this.errEmail = new System.Windows.Forms.ErrorProvider(this.components);
             this.errPassword = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnDisplay = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvAdmin = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
@@ -84,6 +84,17 @@ namespace PropertyManagementApp
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Administrator Info:";
             // 
+            // btnDisplay
+            // 
+            this.btnDisplay.BackColor = System.Drawing.Color.Yellow;
+            this.btnDisplay.Location = new System.Drawing.Point(278, 257);
+            this.btnDisplay.Name = "btnDisplay";
+            this.btnDisplay.Size = new System.Drawing.Size(85, 36);
+            this.btnDisplay.TabIndex = 13;
+            this.btnDisplay.Text = "Display";
+            this.btnDisplay.UseVisualStyleBackColor = false;
+            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
+            // 
             // btnInsert
             // 
             this.btnInsert.BackColor = System.Drawing.Color.Green;
@@ -110,6 +121,7 @@ namespace PropertyManagementApp
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Location = new System.Drawing.Point(126, 191);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(237, 20);
             this.txtPassword.TabIndex = 10;
             // 
@@ -215,16 +227,6 @@ namespace PropertyManagementApp
             // errPassword
             // 
             this.errPassword.ContainerControl = this;
-            // 
-            // btnDisplay
-            // 
-            this.btnDisplay.BackColor = System.Drawing.Color.Yellow;
-            this.btnDisplay.Location = new System.Drawing.Point(278, 257);
-            this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(85, 36);
-            this.btnDisplay.TabIndex = 13;
-            this.btnDisplay.Text = "Display";
-            this.btnDisplay.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 

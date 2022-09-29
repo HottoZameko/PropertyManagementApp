@@ -37,6 +37,27 @@ namespace DAL
             dbConn.Close();
             return x;
         }
+        public DataTable GetAdmin()
+        {
+
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_GetAdmin", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+
+            dt = new DataTable();
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+
         public int InsertPropertyType(PropertyType type)
         {
             if(dbConn.State == ConnectionState.Closed)

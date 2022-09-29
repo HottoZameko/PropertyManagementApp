@@ -204,6 +204,7 @@ namespace PropertyManagementApp
             this.Controls.Add(this.groupBox1);
             this.Name = "ucReports";
             this.Size = new System.Drawing.Size(996, 460);
+            this.Load += new System.EventHandler(this.ucReports_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.btnTypesAndProperties.ResumeLayout(false);
