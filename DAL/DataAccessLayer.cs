@@ -630,5 +630,67 @@ namespace DAL
 
             return dt;
         }
+
+        public DataTable GetRentalsByPrice(PriceSearch p)
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_RentalsByPrice", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbComm.Parameters.AddWithValue("@Price", p.price);
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable EndedRentals()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_EndedRentals", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+
+        public DataTable GetPropertyTypeAndProperty()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_PropertyTypeAndProperty", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+
     }
 }

@@ -46,6 +46,7 @@
     <Compile Include="Agent.cs" />
     <Compile Include="City.cs" />
     <Compile Include="DataAccessLayer.cs" />
+    <Compile Include="PriceSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Property.cs" />
     <Compile Include="PropertyAgent.cs" />

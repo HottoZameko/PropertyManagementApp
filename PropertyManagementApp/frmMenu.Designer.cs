@@ -57,6 +57,7 @@ namespace PropertyManagementApp
             this.ucTenant1 = new PropertyManagementApp.ucTenant();
             this.ucSurbub1 = new PropertyManagementApp.ucSurbub();
             this.ucAgency1 = new PropertyManagementApp.ucAgency();
+            this.ucReports1 = new PropertyManagementApp.ucReports();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -420,6 +421,14 @@ namespace PropertyManagementApp
             this.ucAgency1.Size = new System.Drawing.Size(1028, 393);
             this.ucAgency1.TabIndex = 25;
             // 
+            // ucReports1
+            // 
+            this.ucReports1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ucReports1.Location = new System.Drawing.Point(167, 34);
+            this.ucReports1.Name = "ucReports1";
+            this.ucReports1.Size = new System.Drawing.Size(1028, 394);
+            this.ucReports1.TabIndex = 37;
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -427,6 +436,7 @@ namespace PropertyManagementApp
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1207, 515);
+            this.Controls.Add(this.ucReports1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.ucAdministrator1);
             this.Controls.Add(this.ucProperties1);
@@ -484,6 +494,7 @@ namespace PropertyManagementApp
         private ucProperties ucProperties1;
         private ucAdministrator ucAdministrator1;
         private System.Windows.Forms.Panel panel3;
+        private ucReports ucReports1;
     }
 }
 

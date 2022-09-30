@@ -136,5 +136,17 @@ namespace BLL
         {
             return dal.GetRental();
         }
+        public DataTable GetRentalsByPrice(PriceSearch p)
+        {
+            return dal.GetRentalsByPrice(p);
+        }
+        public DataTable EndedRentals()
+        {
+            return dal.EndedRentals();
+        }
+        public DataTable GetPropertyAndPropertyType()
+        {
+            return dal.GetPropertyTypeAndProperty();
+        }
     }
 }

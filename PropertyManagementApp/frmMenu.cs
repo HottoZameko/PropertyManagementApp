@@ -123,7 +123,7 @@ namespace PropertyManagementApp
 
         private void btnReports_MouseClick(object sender, MouseEventArgs e)
         {
-
+            ucReports1.BringToFront();
         }
 
         private void frmMenu_Activated(object sender, EventArgs e)
