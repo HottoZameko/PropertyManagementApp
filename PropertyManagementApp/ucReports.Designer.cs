@@ -30,6 +30,7 @@ namespace PropertyManagementApp
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnPrice = new System.Windows.Forms.Button();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.btnEndedRentals = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,39 +41,46 @@ namespace PropertyManagementApp
             this.cmbUsers = new System.Windows.Forms.ComboBox();
             this.btnTypesAndProperties = new System.Windows.Forms.GroupBox();
             this.dgvReports = new System.Windows.Forms.DataGridView();
-            this.btnPrice = new System.Windows.Forms.Button();
-            this.btnProvinces = new System.Windows.Forms.Button();
-            this.btnSuburbs = new System.Windows.Forms.Button();
+            this.btnRentals = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.btnTypesAndProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReports)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnSuburbs);
-            this.groupBox1.Controls.Add(this.btnProvinces);
+            this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.btnPrice);
             this.groupBox1.Controls.Add(this.txtPrice);
-            this.groupBox1.Controls.Add(this.btnEndedRentals);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btnCities);
-            this.groupBox1.Controls.Add(this.btnPropTypes);
-            this.groupBox1.Controls.Add(this.btnAllUsers);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cmbUsers);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.groupBox1.Location = new System.Drawing.Point(14, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(953, 166);
+            this.groupBox1.Size = new System.Drawing.Size(952, 166);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search Reports";
             // 
+            // btnPrice
+            // 
+            this.btnPrice.BackColor = System.Drawing.Color.Green;
+            this.btnPrice.Location = new System.Drawing.Point(822, 104);
+            this.btnPrice.Name = "btnPrice";
+            this.btnPrice.Size = new System.Drawing.Size(126, 27);
+            this.btnPrice.TabIndex = 10;
+            this.btnPrice.Text = "Search Price";
+            this.btnPrice.UseVisualStyleBackColor = false;
+            this.btnPrice.Click += new System.EventHandler(this.btnPrice_Click);
+            // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(716, 54);
+            this.txtPrice.Location = new System.Drawing.Point(716, 104);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(100, 27);
             this.txtPrice.TabIndex = 7;
@@ -83,7 +91,7 @@ namespace PropertyManagementApp
             this.btnEndedRentals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnEndedRentals.FlatAppearance.BorderSize = 0;
             this.btnEndedRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEndedRentals.Location = new System.Drawing.Point(798, 16);
+            this.btnEndedRentals.Location = new System.Drawing.Point(800, 3);
             this.btnEndedRentals.Name = "btnEndedRentals";
             this.btnEndedRentals.Size = new System.Drawing.Size(150, 32);
             this.btnEndedRentals.TabIndex = 6;
@@ -94,7 +102,7 @@ namespace PropertyManagementApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(537, 57);
+            this.label2.Location = new System.Drawing.Point(537, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 21);
             this.label2.TabIndex = 5;
@@ -105,11 +113,11 @@ namespace PropertyManagementApp
             this.btnCities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnCities.FlatAppearance.BorderSize = 0;
             this.btnCities.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCities.Location = new System.Drawing.Point(329, 16);
+            this.btnCities.Location = new System.Drawing.Point(325, 3);
             this.btnCities.Name = "btnCities";
-            this.btnCities.Size = new System.Drawing.Size(117, 32);
+            this.btnCities.Size = new System.Drawing.Size(123, 32);
             this.btnCities.TabIndex = 4;
-            this.btnCities.Text = "Cities";
+            this.btnCities.Text = "Full Locations";
             this.btnCities.UseVisualStyleBackColor = false;
             this.btnCities.Click += new System.EventHandler(this.btnCities_Click);
             // 
@@ -118,7 +126,7 @@ namespace PropertyManagementApp
             this.btnPropTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnPropTypes.FlatAppearance.BorderSize = 0;
             this.btnPropTypes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPropTypes.Location = new System.Drawing.Point(560, 16);
+            this.btnPropTypes.Location = new System.Drawing.Point(562, 3);
             this.btnPropTypes.Name = "btnPropTypes";
             this.btnPropTypes.Size = new System.Drawing.Size(243, 32);
             this.btnPropTypes.TabIndex = 3;
@@ -131,7 +139,7 @@ namespace PropertyManagementApp
             this.btnAllUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnAllUsers.FlatAppearance.BorderSize = 0;
             this.btnAllUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAllUsers.Location = new System.Drawing.Point(442, 16);
+            this.btnAllUsers.Location = new System.Drawing.Point(444, 3);
             this.btnAllUsers.Name = "btnAllUsers";
             this.btnAllUsers.Size = new System.Drawing.Size(122, 32);
             this.btnAllUsers.TabIndex = 2;
@@ -142,7 +150,7 @@ namespace PropertyManagementApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 65);
+            this.label1.Location = new System.Drawing.Point(613, 145);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 21);
             this.label1.TabIndex = 1;
@@ -150,12 +158,18 @@ namespace PropertyManagementApp
             // 
             // cmbUsers
             // 
+            this.cmbUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbUsers.FormattingEnabled = true;
-            this.cmbUsers.Location = new System.Drawing.Point(108, 57);
+            this.cmbUsers.Items.AddRange(new object[] {
+            "Agents",
+            "Tenants",
+            "Admins"});
+            this.cmbUsers.Location = new System.Drawing.Point(698, 137);
             this.cmbUsers.Name = "cmbUsers";
             this.cmbUsers.Size = new System.Drawing.Size(250, 29);
             this.cmbUsers.TabIndex = 0;
-            this.cmbUsers.Text = "-Select User To View-";
+            this.cmbUsers.Text = "--Select User To View-";
+            this.cmbUsers.SelectedIndexChanged += new System.EventHandler(this.cmbUsers_SelectedIndexChanged);
             // 
             // btnTypesAndProperties
             // 
@@ -164,7 +178,7 @@ namespace PropertyManagementApp
             this.btnTypesAndProperties.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnTypesAndProperties.Location = new System.Drawing.Point(14, 164);
             this.btnTypesAndProperties.Name = "btnTypesAndProperties";
-            this.btnTypesAndProperties.Size = new System.Drawing.Size(953, 218);
+            this.btnTypesAndProperties.Size = new System.Drawing.Size(952, 218);
             this.btnTypesAndProperties.TabIndex = 1;
             this.btnTypesAndProperties.TabStop = false;
             this.btnTypesAndProperties.Text = "View Reports";
@@ -174,45 +188,49 @@ namespace PropertyManagementApp
             this.dgvReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReports.Location = new System.Drawing.Point(16, 20);
             this.dgvReports.Name = "dgvReports";
-            this.dgvReports.Size = new System.Drawing.Size(931, 188);
+            this.dgvReports.Size = new System.Drawing.Size(932, 188);
             this.dgvReports.TabIndex = 0;
             // 
-            // btnPrice
+            // btnRentals
             // 
-            this.btnPrice.BackColor = System.Drawing.Color.Green;
-            this.btnPrice.Location = new System.Drawing.Point(822, 54);
-            this.btnPrice.Name = "btnPrice";
-            this.btnPrice.Size = new System.Drawing.Size(126, 27);
-            this.btnPrice.TabIndex = 10;
-            this.btnPrice.Text = "Search Price";
-            this.btnPrice.UseVisualStyleBackColor = false;
-            this.btnPrice.Click += new System.EventHandler(this.btnPrice_Click);
+            this.btnRentals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnRentals.FlatAppearance.BorderSize = 0;
+            this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRentals.Location = new System.Drawing.Point(155, 3);
+            this.btnRentals.Name = "btnRentals";
+            this.btnRentals.Size = new System.Drawing.Size(173, 32);
+            this.btnRentals.TabIndex = 11;
+            this.btnRentals.Text = "Rentals with agents";
+            this.btnRentals.UseVisualStyleBackColor = false;
+            this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
             // 
-            // btnProvinces
+            // button1
             // 
-            this.btnProvinces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnProvinces.FlatAppearance.BorderSize = 0;
-            this.btnProvinces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProvinces.Location = new System.Drawing.Point(216, 16);
-            this.btnProvinces.Name = "btnProvinces";
-            this.btnProvinces.Size = new System.Drawing.Size(117, 32);
-            this.btnProvinces.TabIndex = 11;
-            this.btnProvinces.Text = "Provinces";
-            this.btnProvinces.UseVisualStyleBackColor = false;
-            this.btnProvinces.Click += new System.EventHandler(this.btnProvinces_Click);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(-1, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 32);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Most Managing";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // btnSuburbs
+            // panel1
             // 
-            this.btnSuburbs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnSuburbs.FlatAppearance.BorderSize = 0;
-            this.btnSuburbs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuburbs.Location = new System.Drawing.Point(108, 16);
-            this.btnSuburbs.Name = "btnSuburbs";
-            this.btnSuburbs.Size = new System.Drawing.Size(117, 32);
-            this.btnSuburbs.TabIndex = 12;
-            this.btnSuburbs.Text = "Suburbs";
-            this.btnSuburbs.UseVisualStyleBackColor = false;
-            this.btnSuburbs.Click += new System.EventHandler(this.btnSuburbs_Click);
+            this.panel1.BackColor = System.Drawing.Color.Olive;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnCities);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnAllUsers);
+            this.panel1.Controls.Add(this.btnRentals);
+            this.panel1.Controls.Add(this.btnPropTypes);
+            this.panel1.Controls.Add(this.btnEndedRentals);
+            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(948, 40);
+            this.panel1.TabIndex = 13;
             // 
             // ucReports
             // 
@@ -222,12 +240,13 @@ namespace PropertyManagementApp
             this.Controls.Add(this.btnTypesAndProperties);
             this.Controls.Add(this.groupBox1);
             this.Name = "ucReports";
-            this.Size = new System.Drawing.Size(1035, 422);
+            this.Size = new System.Drawing.Size(1010, 422);
             this.Load += new System.EventHandler(this.ucReports_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.btnTypesAndProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReports)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -246,7 +265,8 @@ namespace PropertyManagementApp
         private System.Windows.Forms.Button btnCities;
         private System.Windows.Forms.DataGridView dgvReports;
         private System.Windows.Forms.Button btnPrice;
-        private System.Windows.Forms.Button btnSuburbs;
-        private System.Windows.Forms.Button btnProvinces;
+        private System.Windows.Forms.Button btnRentals;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

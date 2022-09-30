@@ -435,7 +435,7 @@ namespace PropertyManagementApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1207, 515);
+            this.ClientSize = new System.Drawing.Size(1202, 515);
             this.Controls.Add(this.ucReports1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.ucAdministrator1);

@@ -148,5 +148,29 @@ namespace BLL
         {
             return dal.GetPropertyTypeAndProperty();
         }
+        public DataTable FullLocation()
+        {
+            return dal.FullLocation();
+        }
+        public DataTable ViewRentals()
+        {
+            return dal.ViewRentals();
+        }
+        public DataTable ViewAdmin()
+        {
+            return dal.ViewAdmin();
+        }
+        public DataTable ViewTenant()
+        {
+            return dal.ViewTenant();
+        }
+        public DataTable ViewAgent()
+        {
+            return dal.ViewAgent();
+        }
+        public DataTable MostManagingAgent()
+        {
+            return dal.MostManagingAgent();
+        }
     }
 }

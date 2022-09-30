@@ -51,18 +51,18 @@ namespace PropertyManagementApp
 
         private void btnCities_Click(object sender, EventArgs e)
         {
-            dgvReports.DataSource = bll.GetCity();
+            dgvReports.DataSource = bll.FullLocation();
         }
 
-        private void btnProvinces_Click(object sender, EventArgs e)
-        {
-            dgvReports.DataSource = bll.GetProvince();
-        }
+        //private void btnProvinces_Click(object sender, EventArgs e)
+        //{
+        //    dgvReports.DataSource = bll.GetProvince();
+        //}
 
-        private void btnSuburbs_Click(object sender, EventArgs e)
-        {
-            dgvReports.DataSource = bll.GetSuburb();
-        }
+        //private void btnSuburbs_Click(object sender, EventArgs e)
+        //{
+        //    dgvReports.DataSource = bll.GetSuburb();
+        //}
 
         private void btnPropTypes_Click(object sender, EventArgs e)
         {
@@ -71,6 +71,38 @@ namespace PropertyManagementApp
         public void LoadPropType()
         {
             dgvReports.DataSource = bll.GetPropertyAndPropertyType();
+        }
+
+        private void btnRentals_Click(object sender, EventArgs e)
+        {
+            ViewRentals();
+        }
+        public void ViewRentals()
+        {
+            dgvReports.DataSource = bll.ViewRentals();
+        }
+
+        private void cmbUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbUsers.SelectedItem.ToString() == "Admins")
+            {
+                dgvReports.DataSource = bll.ViewAdmin();
+            }
+            else if (cmbUsers.SelectedItem.ToString() == "Tenants")
+            {
+                dgvReports.DataSource = bll.ViewTenant();
+            }
+            else if (cmbUsers.SelectedItem.ToString() == "Agents")
+            {
+                dgvReports.DataSource = bll.ViewAgent();
+            }
+            else
+                MessageBox.Show("Invalid user Selected!");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            dgvReports.DataSource = bll.MostManagingAgent();
         }
     }
 }

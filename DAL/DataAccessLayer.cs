@@ -691,6 +691,119 @@ namespace DAL
 
             return dt;
         }
+        public DataTable FullLocation()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
 
+            dbComm = new SqlCommand("sp_GetCitySuburbProvince", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable ViewRentals()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_GetRentalsForTenantsWithTheirAgents", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable ViewAdmin()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_ViewAdmin", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable ViewTenant()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_ViewTenant", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable ViewAgent()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_ViewAgent", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable MostManagingAgent()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_MostPropertyManagingAgent", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
     }
 }
