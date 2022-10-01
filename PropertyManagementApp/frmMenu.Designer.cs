@@ -69,7 +69,7 @@ namespace PropertyManagementApp
             this.btnPropertyType.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnPropertyType.FlatAppearance.BorderSize = 0;
             this.btnPropertyType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPropertyType.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPropertyType.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPropertyType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPropertyType.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPropertyType.Location = new System.Drawing.Point(-2, 45);
@@ -86,7 +86,7 @@ namespace PropertyManagementApp
             this.btnProperties.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProperties.FlatAppearance.BorderSize = 0;
             this.btnProperties.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProperties.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProperties.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProperties.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnProperties.Location = new System.Drawing.Point(-2, 92);
             this.btnProperties.Name = "btnProperties";
@@ -102,7 +102,7 @@ namespace PropertyManagementApp
             this.btnProvince.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProvince.FlatAppearance.BorderSize = 0;
             this.btnProvince.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProvince.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProvince.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProvince.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnProvince.Location = new System.Drawing.Point(-2, 137);
             this.btnProvince.Name = "btnProvince";
@@ -118,7 +118,7 @@ namespace PropertyManagementApp
             this.btnCities.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCities.FlatAppearance.BorderSize = 0;
             this.btnCities.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCities.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCities.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCities.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCities.Location = new System.Drawing.Point(-2, 183);
             this.btnCities.Name = "btnCities";
@@ -134,7 +134,7 @@ namespace PropertyManagementApp
             this.btnSurbub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSurbub.FlatAppearance.BorderSize = 0;
             this.btnSurbub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSurbub.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSurbub.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSurbub.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSurbub.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSurbub.Location = new System.Drawing.Point(-2, 230);
@@ -151,7 +151,7 @@ namespace PropertyManagementApp
             this.btnAgencies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAgencies.FlatAppearance.BorderSize = 0;
             this.btnAgencies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgencies.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgencies.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgencies.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAgencies.Location = new System.Drawing.Point(-2, 268);
             this.btnAgencies.Name = "btnAgencies";
@@ -167,7 +167,7 @@ namespace PropertyManagementApp
             this.btnAgent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAgent.FlatAppearance.BorderSize = 0;
             this.btnAgent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgent.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgent.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAgent.Location = new System.Drawing.Point(-2, 306);
             this.btnAgent.Name = "btnAgent";
@@ -183,7 +183,7 @@ namespace PropertyManagementApp
             this.btnTenant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTenant.FlatAppearance.BorderSize = 0;
             this.btnTenant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTenant.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTenant.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTenant.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTenant.Location = new System.Drawing.Point(-2, 344);
             this.btnTenant.Name = "btnTenant";
@@ -199,7 +199,7 @@ namespace PropertyManagementApp
             this.btnPropertyAgent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPropertyAgent.FlatAppearance.BorderSize = 0;
             this.btnPropertyAgent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPropertyAgent.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPropertyAgent.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPropertyAgent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPropertyAgent.Location = new System.Drawing.Point(-2, 381);
             this.btnPropertyAgent.Name = "btnPropertyAgent";
@@ -215,7 +215,7 @@ namespace PropertyManagementApp
             this.btnReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnReports.FlatAppearance.BorderSize = 0;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReports.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnReports.Location = new System.Drawing.Point(-2, 454);
             this.btnReports.Name = "btnReports";
@@ -232,7 +232,7 @@ namespace PropertyManagementApp
             this.btnRental.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRental.FlatAppearance.BorderSize = 0;
             this.btnRental.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRental.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRental.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRental.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRental.Location = new System.Drawing.Point(-2, 419);
             this.btnRental.Name = "btnRental";
@@ -282,7 +282,7 @@ namespace PropertyManagementApp
             this.btnAdministrator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAdministrator.FlatAppearance.BorderSize = 0;
             this.btnAdministrator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdministrator.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrator.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrator.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAdministrator.Location = new System.Drawing.Point(-2, -2);
             this.btnAdministrator.Name = "btnAdministrator";
@@ -424,9 +424,9 @@ namespace PropertyManagementApp
             // ucReports1
             // 
             this.ucReports1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ucReports1.Location = new System.Drawing.Point(167, 34);
+            this.ucReports1.Location = new System.Drawing.Point(167, 33);
             this.ucReports1.Name = "ucReports1";
-            this.ucReports1.Size = new System.Drawing.Size(1028, 394);
+            this.ucReports1.Size = new System.Drawing.Size(1028, 395);
             this.ucReports1.TabIndex = 37;
             // 
             // frmMenu

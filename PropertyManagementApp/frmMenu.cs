@@ -124,6 +124,7 @@ namespace PropertyManagementApp
         private void btnReports_MouseClick(object sender, MouseEventArgs e)
         {
             ucReports1.BringToFront();
+            lblNewTex.Text = "Reports Viewing For Properties";
         }
 
         private void frmMenu_Activated(object sender, EventArgs e)
