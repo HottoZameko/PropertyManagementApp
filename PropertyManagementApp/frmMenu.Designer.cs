@@ -58,6 +58,7 @@ namespace PropertyManagementApp
             this.ucSurbub1 = new PropertyManagementApp.ucSurbub();
             this.ucAgency1 = new PropertyManagementApp.ucAgency();
             this.ucReports1 = new PropertyManagementApp.ucReports();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -296,6 +297,7 @@ namespace PropertyManagementApp
             // 
             this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnLogin);
             this.panel2.Controls.Add(this.lblNewTex);
             this.panel2.Location = new System.Drawing.Point(167, 4);
             this.panel2.Name = "panel2";
@@ -429,6 +431,22 @@ namespace PropertyManagementApp
             this.ucReports1.Size = new System.Drawing.Size(1028, 395);
             this.ucReports1.TabIndex = 37;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Red;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnLogin.Location = new System.Drawing.Point(876, -2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(151, 31);
+            this.btnLogin.TabIndex = 15;
+            this.btnLogin.Text = "Login/Register";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,6 +513,7 @@ namespace PropertyManagementApp
         private ucAdministrator ucAdministrator1;
         private System.Windows.Forms.Panel panel3;
         private ucReports ucReports1;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 
