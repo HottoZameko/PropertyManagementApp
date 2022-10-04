@@ -174,6 +174,7 @@ namespace PropertyManagementApp
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Location = new System.Drawing.Point(91, 138);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(270, 20);
             this.txtPassword.TabIndex = 17;
             // 

@@ -27,11 +27,18 @@ namespace PropertyManagementApp
 
         private void btnPrice_Click(object sender, EventArgs e)
         {
-            PriceSearch search = new PriceSearch();
+            try
+            {
+                PriceSearch search = new PriceSearch();
 
-            search.price = double.Parse(txtPrice.Text);
+                search.price = double.Parse(txtPrice.Text);
 
-            dgvReports.DataSource =  bll.GetRentalsByPrice(search);
+                dgvReports.DataSource = bll.GetRentalsByPrice(search);
+            }
+            catch (System.FormatException)
+            {
+                MessageBox.Show("Enter property price you want to view!!...click OK to continue!");
+            }
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
