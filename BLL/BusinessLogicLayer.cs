@@ -172,5 +172,17 @@ namespace BLL
         {
             return dal.MostManagingAgent();
         }
+        public DataTable AdminLogin(string email, string password)
+        {
+            return dal.AdminLogin(email, password);
+        }
+        public DataTable TenantLogin(string email, string password)
+        {
+            return dal.TenantLogin(email, password);
+        }
+        public DataTable AgentLogin(string email, string password)
+        {
+            return dal.AgentLogin(email, password);
+        }
     }
 }

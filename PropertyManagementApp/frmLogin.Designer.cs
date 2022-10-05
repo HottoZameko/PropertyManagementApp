@@ -50,7 +50,7 @@ namespace PropertyManagementApp
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(297, 334);
+            this.panel1.Size = new System.Drawing.Size(297, 397);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -70,9 +70,9 @@ namespace PropertyManagementApp
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(461, 104);
+            this.txtUsername.Location = new System.Drawing.Point(452, 105);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(212, 24);
+            this.txtUsername.Size = new System.Drawing.Size(290, 24);
             this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
@@ -81,10 +81,10 @@ namespace PropertyManagementApp
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(461, 152);
+            this.txtPassword.Location = new System.Drawing.Point(452, 153);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(212, 24);
+            this.txtPassword.Size = new System.Drawing.Size(290, 24);
             this.txtPassword.TabIndex = 2;
             // 
             // label2
@@ -92,7 +92,7 @@ namespace PropertyManagementApp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(354, 106);
+            this.label2.Location = new System.Drawing.Point(345, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 22);
             this.label2.TabIndex = 3;
@@ -103,7 +103,7 @@ namespace PropertyManagementApp
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(354, 154);
+            this.label3.Location = new System.Drawing.Point(345, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 22);
             this.label3.TabIndex = 4;
@@ -114,11 +114,12 @@ namespace PropertyManagementApp
             this.lblIncorrect.AutoSize = true;
             this.lblIncorrect.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIncorrect.ForeColor = System.Drawing.Color.Red;
-            this.lblIncorrect.Location = new System.Drawing.Point(458, 179);
+            this.lblIncorrect.Location = new System.Drawing.Point(537, 180);
             this.lblIncorrect.Name = "lblIncorrect";
             this.lblIncorrect.Size = new System.Drawing.Size(205, 16);
             this.lblIncorrect.TabIndex = 5;
             this.lblIncorrect.Text = "Incorrect credinitials entered...";
+            this.lblIncorrect.Visible = false;
             // 
             // btnLogin
             // 
@@ -127,12 +128,13 @@ namespace PropertyManagementApp
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogin.Location = new System.Drawing.Point(358, 198);
+            this.btnLogin.Location = new System.Drawing.Point(349, 199);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(315, 31);
+            this.btnLogin.Size = new System.Drawing.Size(393, 31);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnRegister
             // 
@@ -142,19 +144,20 @@ namespace PropertyManagementApp
             this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegister.Location = new System.Drawing.Point(358, 235);
+            this.btnRegister.Location = new System.Drawing.Point(349, 236);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(315, 31);
+            this.btnRegister.Size = new System.Drawing.Size(393, 31);
             this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "Register Here!...";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(354, 65);
+            this.label4.Location = new System.Drawing.Point(345, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 22);
             this.label4.TabIndex = 9;
@@ -168,9 +171,9 @@ namespace PropertyManagementApp
             "Tenant",
             "Agent",
             "Admin"});
-            this.cmbUser.Location = new System.Drawing.Point(461, 57);
+            this.cmbUser.Location = new System.Drawing.Point(452, 58);
             this.cmbUser.Name = "cmbUser";
-            this.cmbUser.Size = new System.Drawing.Size(153, 30);
+            this.cmbUser.Size = new System.Drawing.Size(231, 30);
             this.cmbUser.TabIndex = 10;
             this.cmbUser.Text = "-Select Role-";
             // 
@@ -179,7 +182,7 @@ namespace PropertyManagementApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(726, 334);
+            this.ClientSize = new System.Drawing.Size(837, 397);
             this.Controls.Add(this.cmbUser);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRegister);
@@ -191,6 +194,7 @@ namespace PropertyManagementApp
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.panel1);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

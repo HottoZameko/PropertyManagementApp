@@ -805,5 +805,71 @@ namespace DAL
 
             return dt;
         }
+        public DataTable AdminLogin(string email, string password)
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_LoginAdmin", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbComm.Parameters.AddWithValue("@Email", email);
+            dbComm.Parameters.AddWithValue("@Password", password);
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable TenantLogin(string email, string password)
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_TenantLogin", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbComm.Parameters.AddWithValue("@Email", email);
+            dbComm.Parameters.AddWithValue("@Password", password);
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable AgentLogin(string email, string password)
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_AgentLogin", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbComm.Parameters.AddWithValue("@Email", email);
+            dbComm.Parameters.AddWithValue("@Password", password);
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
     }
 }
