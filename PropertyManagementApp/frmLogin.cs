@@ -72,5 +72,10 @@ namespace PropertyManagementApp
                     lblIncorrect.Visible = true;
             }
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

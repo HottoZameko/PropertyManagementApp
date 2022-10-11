@@ -50,7 +50,7 @@ namespace PropertyManagementApp
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(297, 397);
+            this.panel1.Size = new System.Drawing.Size(297, 439);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -182,7 +182,7 @@ namespace PropertyManagementApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(837, 397);
+            this.ClientSize = new System.Drawing.Size(918, 439);
             this.Controls.Add(this.cmbUser);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRegister);
@@ -196,6 +196,7 @@ namespace PropertyManagementApp
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

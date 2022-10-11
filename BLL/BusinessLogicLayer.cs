@@ -184,5 +184,9 @@ namespace BLL
         {
             return dal.AgentLogin(email, password);
         }
+        public DataTable SearchBetweenPrice(double startPrie, double endPrice)
+        {
+            return dal.SearchBetweenPrice(startPrie, endPrice);
+        }
     }
 }

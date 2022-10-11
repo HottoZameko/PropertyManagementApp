@@ -44,10 +44,10 @@ namespace PropertyManagementApp
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdministrator = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblLoginInfo = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblNewTex = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ucReports1 = new PropertyManagementApp.ucReports();
             this.ucAdministrator1 = new PropertyManagementApp.ucAdministrator();
             this.ucProperties1 = new PropertyManagementApp.ucProperties();
             this.ucAgent1 = new PropertyManagementApp.ucAgent();
@@ -59,7 +59,6 @@ namespace PropertyManagementApp
             this.ucTenant1 = new PropertyManagementApp.ucTenant();
             this.ucSurbub1 = new PropertyManagementApp.ucSurbub();
             this.ucAgency1 = new PropertyManagementApp.ucAgency();
-            this.lblLoginInfo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -306,6 +305,16 @@ namespace PropertyManagementApp
             this.panel2.Size = new System.Drawing.Size(1028, 36);
             this.panel2.TabIndex = 24;
             // 
+            // lblLoginInfo
+            // 
+            this.lblLoginInfo.AutoSize = true;
+            this.lblLoginInfo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoginInfo.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblLoginInfo.Location = new System.Drawing.Point(3, 4);
+            this.lblLoginInfo.Name = "lblLoginInfo";
+            this.lblLoginInfo.Size = new System.Drawing.Size(0, 23);
+            this.lblLoginInfo.TabIndex = 16;
+            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Red;
@@ -341,14 +350,6 @@ namespace PropertyManagementApp
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1028, 79);
             this.panel3.TabIndex = 36;
-            // 
-            // ucReports1
-            // 
-            this.ucReports1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ucReports1.Location = new System.Drawing.Point(167, 33);
-            this.ucReports1.Name = "ucReports1";
-            this.ucReports1.Size = new System.Drawing.Size(1028, 395);
-            this.ucReports1.TabIndex = 37;
             // 
             // ucAdministrator1
             // 
@@ -449,16 +450,6 @@ namespace PropertyManagementApp
             this.ucAgency1.Size = new System.Drawing.Size(1028, 393);
             this.ucAgency1.TabIndex = 25;
             // 
-            // lblLoginInfo
-            // 
-            this.lblLoginInfo.AutoSize = true;
-            this.lblLoginInfo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoginInfo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblLoginInfo.Location = new System.Drawing.Point(3, 4);
-            this.lblLoginInfo.Name = "lblLoginInfo";
-            this.lblLoginInfo.Size = new System.Drawing.Size(0, 21);
-            this.lblLoginInfo.TabIndex = 16;
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,7 +457,6 @@ namespace PropertyManagementApp
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1202, 515);
-            this.Controls.Add(this.ucReports1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.ucAdministrator1);
             this.Controls.Add(this.ucProperties1);
@@ -524,7 +514,6 @@ namespace PropertyManagementApp
         private ucProperties ucProperties1;
         private ucAdministrator ucAdministrator1;
         private System.Windows.Forms.Panel panel3;
-        private ucReports ucReports1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblLoginInfo;
     }

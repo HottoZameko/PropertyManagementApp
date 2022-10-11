@@ -111,5 +111,11 @@ namespace PropertyManagementApp
         {
             dgvReports.DataSource = bll.MostManagingAgent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ucExtraReports uc = new ucExtraReports();
+            uc.BringToFront();
+        }
     }
 }

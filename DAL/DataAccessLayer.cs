@@ -871,5 +871,27 @@ namespace DAL
 
             return dt;
         }
+        public DataTable SearchBetweenPrice(double startPrice, double endPrice)
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_SearchByBetweenPrice", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbComm.Parameters.AddWithValue("@StartPrice", startPrice);
+            dbComm.Parameters.AddWithValue("@EndPrice", endPrice);
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
     }
 }

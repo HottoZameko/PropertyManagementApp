@@ -28,7 +28,7 @@ namespace PropertyManagementApp
         {
             if (lblLoginInfo.Text == "Admin")
             {
-                ucPropertyType1.BringToFront();
+                ucPropertyType1.BringToFront(); 
                 lblNewTex.Text = "Manage Property type";
             }
             else
@@ -95,7 +95,7 @@ namespace PropertyManagementApp
 
         private void btnAgent_Click(object sender, EventArgs e)
         {
-            if(lblLoginInfo.Text == "Admin")
+            if(lblLoginInfo.Text == "Agent")
             {
                 ucAgent1.BringToFront();
                 lblNewTex.Text = "Manage Agent";
