@@ -31,5 +31,27 @@ namespace PropertyManagementApp
                 MessageBox.Show("Enter a valid Price... click OK to continue...");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvExtra.DataSource = bll.SearchByCity(txtCity.Text);
+            }
+            catch (System.FormatException)
+            {
+                MessageBox.Show("Enter a city name");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dgvExtra.DataSource = bll.SortAsc();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dgvExtra.DataSource = bll.SortDesc();
+        }
     }
 }

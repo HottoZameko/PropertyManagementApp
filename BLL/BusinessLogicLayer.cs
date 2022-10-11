@@ -188,5 +188,17 @@ namespace BLL
         {
             return dal.SearchBetweenPrice(startPrie, endPrice);
         }
+        public DataTable SearchByCity(string city)
+        {
+            return dal.SearchByCity(city);
+        }
+        public DataTable SortAsc()
+        {
+            return dal.SortAsc();
+        }
+        public DataTable SortDesc()
+        {
+            return dal.SortDesc();
+        }
     }
 }

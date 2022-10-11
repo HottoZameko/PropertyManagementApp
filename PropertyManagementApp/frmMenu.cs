@@ -33,6 +33,7 @@ namespace PropertyManagementApp
             }
             else
                 MessageBox.Show("You need to login as Admin to have an access!!");
+           
         }
 
         private void btnProperties_Click(object sender, EventArgs e)
@@ -103,7 +104,7 @@ namespace PropertyManagementApp
                 ucAgent1.LoadAgency();
             }
             else
-                MessageBox.Show("You need to login as Admin to have an access!!");
+                MessageBox.Show("You need to login as Agent to have an access!!");
         }
 
         private void btnTenant_Click(object sender, EventArgs e)
@@ -150,6 +151,8 @@ namespace PropertyManagementApp
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
+           
+
             lblLoginInfo.Text = UserName;
             ucReports1.Enabled = false;
         }
@@ -197,9 +200,29 @@ namespace PropertyManagementApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
             frmLogin frm = new frmLogin();
             frm.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (lblLoginInfo.Text == "Admin")
+            {
+                ucExtraReports1.BringToFront();
+            }
+            else
+            {
+
+                MessageBox.Show("You need to login as Admin to have an access!!");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblLoginInfo.Text = null;
+            MessageBox.Show("Successfully LOGGED out of the System...");
         }
     }
 }

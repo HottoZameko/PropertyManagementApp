@@ -893,5 +893,64 @@ namespace DAL
 
             return dt;
         }
+        public DataTable SearchByCity(string cityName)
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_SearchByCity", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbComm.Parameters.AddWithValue("@CityDescription", cityName);
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable SortAsc()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_SortBySuburbAsc", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
+        public DataTable SortDesc()
+        {
+            if (dbConn.State == ConnectionState.Closed)
+            {
+                dbConn.Open();
+            }
+
+            dbComm = new SqlCommand("sp_SortDescBySuburb", dbConn);
+            dbComm.CommandType = CommandType.StoredProcedure;
+
+            dbAdapter = new SqlDataAdapter(dbComm);
+            dt = new DataTable();
+
+            dbAdapter.Fill(dt);
+
+            dbConn.Close();
+
+            return dt;
+        }
     }
 }

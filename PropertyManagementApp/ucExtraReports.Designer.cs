@@ -37,13 +37,15 @@ namespace PropertyManagementApp
             this.label3 = new System.Windows.Forms.Label();
             this.txtTo = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExtra)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,9 +73,9 @@ namespace PropertyManagementApp
             // dgvExtra
             // 
             this.dgvExtra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExtra.Location = new System.Drawing.Point(3, 187);
+            this.dgvExtra.Location = new System.Drawing.Point(0, 0);
             this.dgvExtra.Name = "dgvExtra";
-            this.dgvExtra.Size = new System.Drawing.Size(930, 253);
+            this.dgvExtra.Size = new System.Drawing.Size(930, 173);
             this.dgvExtra.TabIndex = 1;
             // 
             // label2
@@ -125,13 +127,13 @@ namespace PropertyManagementApp
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // textBox1
+            // txtCity
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(689, 154);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 27);
-            this.textBox1.TabIndex = 7;
+            this.txtCity.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCity.Location = new System.Drawing.Point(689, 154);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(163, 27);
+            this.txtCity.TabIndex = 7;
             // 
             // button1
             // 
@@ -142,6 +144,7 @@ namespace PropertyManagementApp
             this.button1.TabIndex = 8;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -154,6 +157,7 @@ namespace PropertyManagementApp
             this.button2.TabIndex = 9;
             this.button2.Text = "Sort Location in Ascesnding";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -166,6 +170,7 @@ namespace PropertyManagementApp
             this.button3.TabIndex = 10;
             this.button3.Text = "/ Descending Order";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
             // 
@@ -177,28 +182,40 @@ namespace PropertyManagementApp
             this.label4.TabIndex = 11;
             this.label4.Text = "Search City:";
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.dgvExtra);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(0, 186);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(936, 185);
+            this.panel2.TabIndex = 12;
+            // 
             // ucExtraReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtTo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtFrom);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dgvExtra);
             this.Controls.Add(this.panel1);
             this.Name = "ucExtraReports";
-            this.Size = new System.Drawing.Size(936, 454);
+            this.Size = new System.Drawing.Size(936, 371);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExtra)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,10 +231,11 @@ namespace PropertyManagementApp
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTo;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
     }
 }
