@@ -256,9 +256,9 @@ namespace PropertyManagementApp
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(260, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 35);
+            this.label1.Size = new System.Drawing.Size(411, 35);
             this.label1.TabIndex = 13;
-            this.label1.Text = "PROPERTY MANAGEMENT";
+            this.label1.Text = "A.D.H PROPERTY MANAGEMENT";
             // 
             // panel1
             // 
@@ -339,7 +339,7 @@ namespace PropertyManagementApp
             // 
             this.lblNewTex.AutoSize = true;
             this.lblNewTex.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewTex.ForeColor = System.Drawing.Color.Blue;
+            this.lblNewTex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lblNewTex.Location = new System.Drawing.Point(308, 0);
             this.lblNewTex.Name = "lblNewTex";
             this.lblNewTex.Size = new System.Drawing.Size(0, 25);
@@ -359,7 +359,7 @@ namespace PropertyManagementApp
             // 
             // ucReports1
             // 
-            this.ucReports1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ucReports1.BackColor = System.Drawing.Color.Silver;
             this.ucReports1.Location = new System.Drawing.Point(167, 34);
             this.ucReports1.Name = "ucReports1";
             this.ucReports1.Size = new System.Drawing.Size(1028, 393);
@@ -376,7 +376,7 @@ namespace PropertyManagementApp
             // 
             // ucAdministrator1
             // 
-            this.ucAdministrator1.BackColor = System.Drawing.Color.Olive;
+            this.ucAdministrator1.BackColor = System.Drawing.Color.Silver;
             this.ucAdministrator1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.ucAdministrator1.Location = new System.Drawing.Point(167, 34);
             this.ucAdministrator1.Name = "ucAdministrator1";
@@ -385,7 +385,7 @@ namespace PropertyManagementApp
             // 
             // ucProperties1
             // 
-            this.ucProperties1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.ucProperties1.BackColor = System.Drawing.Color.Silver;
             this.ucProperties1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucProperties1.Location = new System.Drawing.Point(167, 34);
             this.ucProperties1.Name = "ucProperties1";
@@ -394,7 +394,7 @@ namespace PropertyManagementApp
             // 
             // ucAgent1
             // 
-            this.ucAgent1.BackColor = System.Drawing.Color.Teal;
+            this.ucAgent1.BackColor = System.Drawing.Color.Silver;
             this.ucAgent1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucAgent1.Location = new System.Drawing.Point(167, 34);
             this.ucAgent1.Name = "ucAgent1";
@@ -403,7 +403,7 @@ namespace PropertyManagementApp
             // 
             // ucRental1
             // 
-            this.ucRental1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucRental1.BackColor = System.Drawing.Color.Silver;
             this.ucRental1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucRental1.Location = new System.Drawing.Point(167, 34);
             this.ucRental1.Name = "ucRental1";
@@ -412,7 +412,7 @@ namespace PropertyManagementApp
             // 
             // ucCities1
             // 
-            this.ucCities1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ucCities1.BackColor = System.Drawing.Color.Silver;
             this.ucCities1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucCities1.Location = new System.Drawing.Point(167, 34);
             this.ucCities1.Name = "ucCities1";
@@ -421,7 +421,7 @@ namespace PropertyManagementApp
             // 
             // ucPropertyAgent1
             // 
-            this.ucPropertyAgent1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ucPropertyAgent1.BackColor = System.Drawing.Color.Silver;
             this.ucPropertyAgent1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucPropertyAgent1.Location = new System.Drawing.Point(167, 34);
             this.ucPropertyAgent1.Name = "ucPropertyAgent1";
@@ -430,7 +430,7 @@ namespace PropertyManagementApp
             // 
             // ucPropertyType1
             // 
-            this.ucPropertyType1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ucPropertyType1.BackColor = System.Drawing.Color.Silver;
             this.ucPropertyType1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucPropertyType1.Location = new System.Drawing.Point(167, 34);
             this.ucPropertyType1.Name = "ucPropertyType1";
@@ -439,7 +439,7 @@ namespace PropertyManagementApp
             // 
             // ucProvince1
             // 
-            this.ucProvince1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ucProvince1.BackColor = System.Drawing.Color.Silver;
             this.ucProvince1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucProvince1.Location = new System.Drawing.Point(167, 34);
             this.ucProvince1.Name = "ucProvince1";
@@ -448,7 +448,7 @@ namespace PropertyManagementApp
             // 
             // ucTenant1
             // 
-            this.ucTenant1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucTenant1.BackColor = System.Drawing.Color.Silver;
             this.ucTenant1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucTenant1.Location = new System.Drawing.Point(167, 34);
             this.ucTenant1.Name = "ucTenant1";
@@ -457,7 +457,7 @@ namespace PropertyManagementApp
             // 
             // ucSurbub1
             // 
-            this.ucSurbub1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ucSurbub1.BackColor = System.Drawing.Color.Silver;
             this.ucSurbub1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucSurbub1.Location = new System.Drawing.Point(167, 34);
             this.ucSurbub1.Name = "ucSurbub1";
@@ -466,7 +466,7 @@ namespace PropertyManagementApp
             // 
             // ucAgency1
             // 
-            this.ucAgency1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucAgency1.BackColor = System.Drawing.Color.Silver;
             this.ucAgency1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ucAgency1.Location = new System.Drawing.Point(167, 34);
             this.ucAgency1.Name = "ucAgency1";
