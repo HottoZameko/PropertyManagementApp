@@ -48,6 +48,8 @@ namespace PropertyManagementApp
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblNewTex = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.ucReports1 = new PropertyManagementApp.ucReports();
             this.ucExtraReports1 = new PropertyManagementApp.ucExtraReports();
             this.ucAdministrator1 = new PropertyManagementApp.ucAdministrator();
@@ -61,8 +63,7 @@ namespace PropertyManagementApp
             this.ucTenant1 = new PropertyManagementApp.ucTenant();
             this.ucSurbub1 = new PropertyManagementApp.ucSurbub();
             this.ucAgency1 = new PropertyManagementApp.ucAgency();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ucHome1 = new PropertyManagementApp.ucHome();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -357,6 +358,38 @@ namespace PropertyManagementApp
             this.panel3.Size = new System.Drawing.Size(1028, 79);
             this.panel3.TabIndex = 36;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.Location = new System.Drawing.Point(856, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 53);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Logout";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DimGray;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.button2.Location = new System.Drawing.Point(-1, -1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(195, 52);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Extra Reports?";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // ucReports1
             // 
             this.ucReports1.BackColor = System.Drawing.Color.Silver;
@@ -473,37 +506,12 @@ namespace PropertyManagementApp
             this.ucAgency1.Size = new System.Drawing.Size(1028, 393);
             this.ucAgency1.TabIndex = 25;
             // 
-            // button2
+            // ucHome1
             // 
-            this.button2.BackColor = System.Drawing.Color.DimGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button2.Location = new System.Drawing.Point(-1, -1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 52);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Extra Reports?";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(856, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 53);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Logout";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ucHome1.Location = new System.Drawing.Point(168, 34);
+            this.ucHome1.Name = "ucHome1";
+            this.ucHome1.Size = new System.Drawing.Size(1027, 393);
+            this.ucHome1.TabIndex = 39;
             // 
             // frmMenu
             // 
@@ -512,6 +520,7 @@ namespace PropertyManagementApp
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1202, 515);
+            this.Controls.Add(this.ucHome1);
             this.Controls.Add(this.ucReports1);
             this.Controls.Add(this.ucExtraReports1);
             this.Controls.Add(this.panel3);
@@ -577,6 +586,7 @@ namespace PropertyManagementApp
         private ucReports ucReports1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private ucHome ucHome1;
     }
 }
 

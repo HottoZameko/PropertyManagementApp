@@ -27,49 +27,57 @@ namespace PropertyManagementApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (cmbUser.SelectedItem.ToString() == "Admin")
+            try
             {
-                DataTable dt = bll.AdminLogin(txtUsername.Text, txtPassword.Text);
-
-                if (dt.Rows.Count > 0)
+                if (cmbUser.SelectedItem.ToString() == "Admin")
                 {
-                    frmMenu frm = new frmMenu();
-                    frm.UserName = cmbUser.SelectedItem.ToString();
-                    frm.Show();
-                    this.Hide();
-                    
+                    DataTable dt = bll.AdminLogin(txtUsername.Text, txtPassword.Text);
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        frmMenu frm = new frmMenu();
+                        frm.UserName = cmbUser.SelectedItem.ToString();
+                        frm.Show();
+                        this.Hide();
+
+                    }
+                    else
+                        lblIncorrect.Visible = true;
+
                 }
-                else
-                    lblIncorrect.Visible = true;
+
+                else if (cmbUser.SelectedItem.ToString() == "Tenant")
+                {
+                    DataTable dt = bll.TenantLogin(txtUsername.Text, txtPassword.Text);
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        frmMenu frm = new frmMenu();
+                        frm.UserName = cmbUser.SelectedItem.ToString();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    else
+                        lblIncorrect.Visible = true;
+                }
+                else if (cmbUser.SelectedItem.ToString() == "Agent")
+                {
+                    DataTable dt = bll.AgentLogin(txtUsername.Text, txtPassword.Text);
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        frmMenu frm = new frmMenu();
+                        frm.UserName = cmbUser.SelectedItem.ToString();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    else
+                        lblIncorrect.Visible = true;
+                }
             }
-
-            else if (cmbUser.SelectedItem.ToString() == "Tenant")
+            catch (System.NullReferenceException)
             {
-                DataTable dt = bll.TenantLogin(txtUsername.Text, txtPassword.Text);
-
-                if (dt.Rows.Count > 0)
-                {
-                    frmMenu frm = new frmMenu();
-                    frm.UserName = cmbUser.SelectedItem.ToString();
-                    frm.Show();
-                    this.Hide();
-                }
-                else
-                    lblIncorrect.Visible = true;
-            }
-            else if (cmbUser.SelectedItem.ToString() == "Agent")
-            {
-                DataTable dt = bll.AgentLogin(txtUsername.Text, txtPassword.Text);
-
-                if (dt.Rows.Count > 0)
-                {
-                    frmMenu frm = new frmMenu();
-                    frm.UserName = cmbUser.SelectedItem.ToString();
-                    frm.Show();
-                    this.Hide();
-                }
-                else
-                    lblIncorrect.Visible = true;
+                MessageBox.Show("Please select user Role.");
             }
         }
 

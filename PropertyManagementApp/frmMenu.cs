@@ -223,6 +223,7 @@ namespace PropertyManagementApp
         {
             lblLoginInfo.Text = null;
             MessageBox.Show("Successfully LOGGED out of the System...");
+            ucHome1.BringToFront();
         }
     }
 }
