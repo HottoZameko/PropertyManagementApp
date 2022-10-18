@@ -22,7 +22,9 @@ namespace PropertyManagementApp
         BusinessLogicLayer bll = new BusinessLogicLayer();
         private void btnRegister_Click(object sender, EventArgs e)
         {
-           
+            frmMenu frm = new frmMenu();
+            frm.UserName = cmbUser.SelectedItem.ToString() + ": Registration";
+            frm.Show();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

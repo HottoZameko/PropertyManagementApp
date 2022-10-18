@@ -103,13 +103,24 @@ namespace PropertyManagementApp
 
                 ucAgent1.LoadAgency();
             }
-            else
+            else if (lblLoginInfo.Text == "Agent: Registration")
+            {
+                ucAgent1.BringToFront();
+                lblNewTex.Text = "Manage Agent";
+
+                ucAgent1.LoadAgency();
+            }
                 MessageBox.Show("You need to login as Agent to have an access!!");
         }
 
         private void btnTenant_Click(object sender, EventArgs e)
         {
             if (lblLoginInfo.Text == "Tenant")
+            {
+                ucTenant1.BringToFront();
+                lblNewTex.Text = "Manage Tenant";
+            }
+            else if (lblLoginInfo.Text == "Tenant: Registration")
             {
                 ucTenant1.BringToFront();
                 lblNewTex.Text = "Manage Tenant";
@@ -160,6 +171,11 @@ namespace PropertyManagementApp
         private void btnAdministrator_Click(object sender, EventArgs e)
         {
             if (lblLoginInfo.Text == "Admin")
+            {
+                ucAdministrator1.BringToFront();
+                lblNewTex.Text = "Administrator";
+            }
+            else if (lblLoginInfo.Text == "Admin: Registration")
             {
                 ucAdministrator1.BringToFront();
                 lblNewTex.Text = "Administrator";
