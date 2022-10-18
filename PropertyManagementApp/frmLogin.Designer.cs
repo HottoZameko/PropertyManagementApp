@@ -165,6 +165,7 @@ namespace PropertyManagementApp
             // 
             // cmbUser
             // 
+            this.cmbUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbUser.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUser.FormattingEnabled = true;
             this.cmbUser.Items.AddRange(new object[] {
