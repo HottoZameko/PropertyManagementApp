@@ -162,6 +162,7 @@ namespace PropertyManagementApp
 
         private void dgvTenant_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (dgvTenant.SelectedRows.Count > 0)
             {
                 txtID.Text = dgvTenant.SelectedRows[0].Cells["TenantID"].Value.ToString();
@@ -170,7 +171,8 @@ namespace PropertyManagementApp
                 txtEmail.Text = dgvTenant.SelectedRows[0].Cells["Email"].Value.ToString();
                 txtPassword.Text = dgvTenant.SelectedRows[0].Cells["Password"].Value.ToString();
                 txtPhone.Text = dgvTenant.SelectedRows[0].Cells["Phone"].Value.ToString();
-                cmbStatus.Text = dgvTenant.SelectedRows[0].Cells["Status"].Value.ToString(); 
+                cmbStatus.Text = dgvTenant.SelectedRows[0].Cells["Status"].Value.ToString();
+
             }
         }
     }
