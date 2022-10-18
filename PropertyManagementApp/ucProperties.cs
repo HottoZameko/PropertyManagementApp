@@ -86,6 +86,7 @@ namespace PropertyManagementApp
                     txtDescription.Clear();
                     txtPrice.Clear();
                     picProperty.Image = null;
+                    errProperty.Clear();
                 }
             }
         }

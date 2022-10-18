@@ -73,6 +73,12 @@ namespace PropertyManagementApp
                     txtEmail.Clear();
                     txtPassword.Clear();
                     txtPhone.Clear();
+
+                    errSurname.Clear();
+                    errPhone.Clear();
+                    errPassword.Clear();
+                    errName.Clear();
+                    errEmail.Clear();
                 }
             }
         }

@@ -51,6 +51,7 @@ namespace PropertyManagementApp
                 if(x > 0)
                 {
                     MessageBox.Show("Suburb has been successfully added.");
+                    errSubub.Clear();
                 }
             }
         }
