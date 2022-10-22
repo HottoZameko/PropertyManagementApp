@@ -158,6 +158,10 @@ namespace PropertyManagementApp
             {
                 MessageBox.Show("Select a column to DELETE!!");
             }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("Information already in use. You cannot Delete...");
+            }
         }
 
         private void dgvTenant_CellClick(object sender, DataGridViewCellEventArgs e)
