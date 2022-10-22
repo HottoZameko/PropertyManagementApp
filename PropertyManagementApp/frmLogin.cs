@@ -27,8 +27,13 @@ namespace PropertyManagementApp
                 frmMenu frm = new frmMenu();
                 frm.UserName = cmbUser.SelectedItem.ToString() + ": Registration";
                 frm.Show();
+                this.Hide();
             }
             catch (System.NullReferenceException)
+            {
+                MessageBox.Show("Please select a Role first! click OK to continue...");
+            }
+            catch (System.FormatException)
             {
                 MessageBox.Show("Please select a Role first! click OK to continue...");
             }
