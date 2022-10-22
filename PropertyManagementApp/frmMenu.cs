@@ -110,6 +110,7 @@ namespace PropertyManagementApp
 
                 ucAgent1.LoadAgency();
             }
+            else
                 MessageBox.Show("You need to login as Agent to have an access!!");
         }
 
