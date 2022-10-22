@@ -188,7 +188,17 @@ namespace PropertyManagementApp
 
         private void btnReports_MouseClick(object sender, MouseEventArgs e)
         {
-            
+
+            ucPropertyType1.GetType();
+            ucProperties1.LoadProperty();
+            ucTenant1.LoadTenant();
+            ucAgency1.LoadAgency();
+            ucAgent1.LoadAgent();
+            ucCities1.LoadCity();
+            ucRental1.LoadTenant();
+            ucPropertyAgent1.LoadPropertyAgent();
+            ucPropertyAgent1.LoadAgent();
+            ucPropertyAgent1.LoadProperty();
             if (lblLoginInfo.Text == "Admin")
             {
                 ucReports1.BringToFront();
@@ -225,6 +235,16 @@ namespace PropertyManagementApp
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ucPropertyType1.GetType();
+            ucProperties1.LoadProperty();
+            ucTenant1.LoadTenant();
+            ucAgency1.LoadAgency();
+            ucAgent1.LoadAgent();
+            ucCities1.LoadCity();
+            ucRental1.LoadTenant();
+            ucPropertyAgent1.LoadPropertyAgent();
+            ucPropertyAgent1.LoadAgent();
+            ucPropertyAgent1.LoadProperty();
             if (lblLoginInfo.Text == "Admin")
             {
                 ucExtraReports1.BringToFront();
